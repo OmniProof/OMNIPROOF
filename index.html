@@ -1,33 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OMNIPROOF | Certified Meme Standard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>OMNIPROOF | Certified Meme Standard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img class="banner" src="https://raw.githubusercontent.com/OmniProof/OMNIPROOF/refs/heads/main/2175E0D6-8E73-4124-A4FA-F51BE441A28C.png" alt="OMNIPROOF Banner"/>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="proof.html">Proof</a>
-      <a href="community.html">Community</a>
-    </nav>
-  </header>
+    <div class="noise-overlay"></div>
+    <div class="gradient-sphere"></div>
+    
+    <header>
+        <div class="banner-container">
+            <div class="banner-overlay"></div>
+            <img class="banner" src="https://raw.githubusercontent.com/OmniProof/OMNIPROOF/refs/heads/main/2175E0D6-8E73-4124-A4FA-F51BE441A28C.png" alt="OMNIPROOF Banner"/>
+        </div>
+        <nav>
+            <div class="nav-item active" data-section="home">Home</div>
+            <div class="nav-item" data-section="about">About</div>
+            <div class="nav-item" data-section="proof">Proof</div>
+            <div class="nav-item" data-section="community">Community</div>
+        </nav>
+    </header>
 
-  <main>
-    <img class="logo" src="https://raw.githubusercontent.com/OmniProof/OMNIPROOF/refs/heads/main/9F6A64C7-F6E1-493C-875E-FEA07F7C66DA.png" alt="OMNIPROOF Logo"/>
-    <h1>OMNIPROOF</h1>
-    <p class="tagline">Certified Meme Standard • Built on Solana • Forged with @RProof_tech</p>
-    <a class="cta-button" href="https://discord.gg/hZ9XBh8buU" target="_blank">Join the Syndicate</a>
-  </main>
+    <main>
+        <section id="home" class="section active">
+            <div class="content-wrapper">
+                <div class="logo-wrapper">
+                    <div class="logo-glow"></div>
+                    <img class="logo" src="https://raw.githubusercontent.com/OmniProof/OMNIPROOF/refs/heads/main/9F6A64C7-F6E1-493C-875E-FEA07F7C66DA.png" alt="OMNIPROOF Logo"/>
+                </div>
+                <h1 class="glitch-text">OMNIPROOF</h1>
+                <p class="tagline">Certified Meme Standard • Built on Solana • Forged with <a href="https://x.com/rproof_tech?s=21" target="_blank" class="highlight-link">@RProof_tech</a></p>
+                <div class="cta-container">
+                    <a href="https://discord.gg/hZ9XBh8buU" target="_blank" class="cta-button">
+                        <span class="button-text">Join the Syndicate</span>
+                        <div class="button-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>🧿 Powered by Degens. Secured on Solana. Launched with Rugproof.</p>
-  </footer>
-</body>
+        <section id="about" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">What is OMNIPROOF?</h2>
+                <div class="glass-card">
+                    <div class="card-glow"></div>
+                    <p>Born from the ashes of rug pulls and meme overload, OMNIPROOF is the response to the chaos. It's not a promise — it's a symbol.</p>
+                    <p><strong>"Omni"</strong> means universal — we go cross-chain, cross-culture, cross-meta.<br><strong>"Proof"</strong> means we don't talk. We show.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proof" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">🧿 The OMNIPROOF Stamp</h2>
+                <div class="proof-card">
+                    <div class="card-glow"></div>
+                    <p>Projects will soon be able to apply for OMNIPROOF verification, earning a trusted stamp of approval.</p>
+                    <div class="status-indicator">
+                        <span class="pulse"></span>
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Join the Movement</h2>
+                <div class="social-grid">
+                    <a href="https://discord.gg/hZ9XBh8buU" target="_blank" class="social-button discord">
+                        <div class="button-glow"></div>
+                        <span class="icon">🧿</span>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://x.com/omniproof_x?s=21" target="_blank" class="social-button twitter">
+                        <div class="button-glow"></div>
+                        <span class="icon">𝕏</span>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🧿 Powered by Degens. Secured on Solana. Launched with Rugproof.</p>
+    </footer>
+
+<style>
+:root {
+    --primary: #14f195;
+    --secondary: #f3c622;
+    --accent: #a855f7;
+    --background: #0c0c0c;
+    --text: #f0f0f0;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+html {
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1Ii8+PC9zdmc+');
+    pointer-events: none;
+    z-index: 100;
+}
+
+.gradient-sphere {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(20, 241, 149, 0.1) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    animation: spherePulse 10s ease-in-out infinite;
+}
+
+@keyframes spherePulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(12, 12, 12, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(20, 241, 149, 0.1);
+}
+
+.banner-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(12, 12, 12, 0.5));
+    z-index: 1;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.nav-item {
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.nav-item:hover::before {
+    opacity: 0.1;
+}
+
+.nav-item.active {
+    color: var(--secondary);
+    background: rgba(20, 241, 149, 0.1);
+    box-shadow: 0 0 20px rgba(20, 241, 149, 0.1);
+}
+
+.section {
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 220px 1rem 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.section.active {
+    display: flex;
+    opacity: 1;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.logo-glow {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(20, 241, 149, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: glow 3s ease-in-out infinite;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.glitch-text {
+    position: relative;
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(0deg); }
+    21% { transform: skew(10deg); }
+    22% { transform: skew(0deg); }
+    47% { transform: skew(0deg); }
+    48% { transform: skew(-10deg); }
+    49% { transform: skew(0deg); }
+    100% { transform: skew(0deg); }
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.highlight-link {
+    color: var(--primary);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: var(--secondary);
+}
+
+.highlight-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.highlight-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.cta-button {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: var(--background);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(45deg);
+    animation: buttonGlow 3s infinite;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes buttonGlow {
+    0% { transform: rotate(45deg) translateY(0%); opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { transform: rotate(45deg) translateY(100%); opacity: 0; }
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(20, 241, 149, 0.2);
+}
+
+.cta-button:hover .button-glow {
+    opacity: 1;
+}
+
+.glass-card, .proof-card {
+    position: relative;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.card-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(20, 241, 149, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover .card-glow,
+.proof-card:hover .card-glow {
+    transform: translate(50%, 50%);
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pulse {
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.1);
+    border-color: var(--primary);
+}
+
+.social-button:hover .button-glow {
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(12, 12, 12, 0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid rgba(20, 241, 149, 0.1);
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        height: 100px;
+    }
+    
+    .section {
+        padding-top: 170px;
+    }
+    
+    h1 { 
+        font-size: 2rem; 
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo-glow {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .nav-item { 
+        padding: 0.3rem 0.8rem; 
+    }
+    
+    .social-grid { 
+        grid-template-columns: 1fr; 
+    }
+}
+</style>
+
+<script>
+// Navigation with smooth transitions
+document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+        // Update navigation state
+        document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+        item.classList.add('active');
+        
+        // Hide all sections first
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            setTimeout(() => {
+                section.classList.remove('active');
+            }, 500);
+        });
+        
+        // Show selected section with delay
+        setTimeout(() => {
+            const targetSection = document.getElementById(item.dataset.section);
+            targetSection.classList.add('active');
+            setTimeout(() => {
+                targetSection.style.opacity = '1';
+            }, 50);
+        }, 500);
+    });
+});
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.glass-card, .proof-card, .social-button').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'all 0.6s ease-out';
+    observer.observe(el);
+});
+
+// Add touch ripple effect
+document.querySelectorAll('.nav-item, .cta-button, .social-button').forEach(button => {
+    button.addEventListener('touchstart', function(e) {
+        const rect = this.getBoundingClientRect();
+        const ripple = document.createElement('div');
+        ripple.className = 'ripple';
+        ripple.style.left = `${e.touches[0].clientX - rect.left}px`;
+        ripple.style.top = `${e.touches[0].clientY - rect.top}px`;
+        this.appendChild(ripple);
+        
+        setTimeout(() => {
+            ripple.remove();
+        }, 1000);
+    });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    // Update any necessary responsive adjustments
+});
+</script>
 </html>
